@@ -1,0 +1,47 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+.navbar {
+    background-color: v.$naranja;
+    font-weight: bold;
+    color: v.$azul;
+}
+
+.contenedorBarraNavegacion{
+    
+    
+
+    .navbar-collapse{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+
+        text-align: center;
+        @include m.tablet{
+           flex-direction: row;
+           justify-content: space-between ;
+        }
+        
+    }
+    
+}
+
+.navbar-brand{
+    margin: 0rem !important;
+    picture{
+        height: 3rem;
+        overflow: hidden;
+        border-radius: 50%;
+        img{
+            
+            height: 100%;
+            scale: 1.5;
+            transition: scale .2s ease-in-out;
+        }
+
+        &:hover img{
+            scale: 1.8;
+            transition: scale .2s ease-in-out;
+        }
+    }
+}
