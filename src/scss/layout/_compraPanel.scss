@@ -1,0 +1,30 @@
+
+@use '../base/mixins' as m;
+.card-text{
+    
+    @include m.tablet{
+        height: 12rem ;    
+    }
+}
+.btnFluido{
+    width: 100%;
+}
+
+.card-img-top{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+    
+    overflow: hidden;
+    height: 28rem;
+    
+    &:hover img{
+        scale: .8;
+        transition: scale .2s ease;
+    }
+    img{
+        transition: scale .2s ease-in-out;
+        width: 100%;
+        object-fit: cover;
+    }
+}

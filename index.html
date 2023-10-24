@@ -50,7 +50,130 @@
      
         </div>
       </nav>
+      <!-- formulario -->
+      <section>
+        <div class="container-sm contenedorFormulario">
+          
+  
+            <form class="row g-3" action="">
+              <h1 class="text-center">Descubre que tan factible es adquirir paneles solares según tu caso!</h1>
+              
+              <div class="contLbl col-sm-3 ">
+                <label class="lbl" for="tarifa">
+                  Cuál es tu  tarifa?
+                </label>
+              </div>
+        
+          
+              <select class="col-sm-9" aria-label="Selector de tipo de tarifa" id="tarifa">
+                <option selected>Desconozco / No estoy seguro</option>
+                <option value="1">Tarifa domestica 1D (o menor)</option>
+                <option value="2">Tarifa domestica alto</option>
+                <option value="3">Tarifa para negocios</option>
+              </select>
 
+              
+              <div class="contLbl col-sm-3 ">
+                <label class=" lbl" for="totalLuz">
+                  Cuál fue tu gasto total de luz todo el año pasado (KWH)?
+                </label>
+              </div>
+              <input class=" col-sm-9" type="number" id="totalLuz">
+
+              <div class="contLbl col-sm-3">
+                <label class="  lbl" for="totalLuz">
+                  Cuál fue tu gasto total en pesos de luz todo el año pasado?
+                </label>
+              </div>
+              <input class=" col-sm-9" type="number" id="totalLuz">
+
+              <div class="contLbl col-12  text-center">
+                <label class=" text-center lbl " for="disponibilidadSolar">
+                  Disponibilidad solar <br>
+                  <span class="subtitulo">(agregar aqui texto)</span>
+                </label>
+                
+                <input type="range" class="form-range" min="0" max="5" step="0.5" id="disponibilidadSolar">
+              </div>
+   
+
+            </form>
+          
+          </div>
+  
+          
+      
+      </section>
+
+      <!-- link compra -->
+
+      <section class="comprarPaneles">
+     
+        <div class="container-sm">
+          <h2 class="text-center">
+            Estas son algunas opciones de compra, recuerda buscar la opción ideal según tus necesidades.
+          </h2>
+          <div class="row g-3">
+
+              <div class="col-12 col-md-6 col-xl-4">
+
+                <div class="card " >
+
+                  <picture class="card-img-top contenedorCompraPaneles">
+                    <source srcset="build/img/panel1.webp" type="image/webp">
+                    <source srcset="build/img/panel1.jpg" type="image/jpeg">
+                    <img src="build/img/panel1.jpg" alt="Imagen panel solar a la venta">
+                  </picture>
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Amazon <i class="bi bi-amazon"></i></h5>
+                    <p class="card-text">Modulo Solar de 330 W Policristalino grado A/Para sistemas de interconexión con la red eléctrica y sistemas aislados en 24 Vcd. Garantía 10 años de garantia contra defectos de fabricación y 25 años de vida útil (salida de potencia).</p>
+                    <a href="https://www.amazon.com.mx/Policristalino-sistemas-interconexi%C3%B3n-el%C3%A9ctrica-aislados/dp/B084NTJD15/ref=sr_1_2?adgrpid=82165221570&hvadid=589436315407&hvdev=c&hvlocphy=1010160&hvnetw=g&hvqmt=e&hvrand=8247957435547338807&hvtargid=kwd-321839338522&hydadcr=1026_1014997235&keywords=panel+solar+amazon&qid=1698128013&sr=8-2&ufe=app_do%3Aamzn1.fos.628a2120-cf12-4882-b7cf-30e681beb181" class="btn btn-primary btnFluido">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            
+              
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card " >
+
+                  <picture class="card-img-top contenedorCompraPaneles">
+                    <source srcset="build/img/panel2.webp" type="image/webp">
+                    <source srcset="build/img/panel2.jpg" type="image/jpeg">
+                    <img src="build/img/panel2.jpg" alt="Imagen panel solar a la venta">
+                  </picture>
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Home Depot <i class="bi bi-bag"></i></h5>
+                    <p class="card-text">Panel solar de 540 watts, adecuado para generar energía eléctrica sin dañar el medio ambiente. Potencia máxima de 540 watts. Sus dimensiones son 201.5 x 100.2 x 4 cm, con 144 celdas perc mono cristalino. Se requiere de inversor para su funcionamiento, compatible con inversores marca SMA y Huawei.</p>
+                    <a href="https://www.amazon.com.mx/Policristalino-sistemas-interconexi%C3%B3n-el%C3%A9ctrica-aislados/dp/B084NTJD15/ref=sr_1_2?adgrpid=82165221570&hvadid=589436315407&hvdev=c&hvlocphy=1010160&hvnetw=g&hvqmt=e&hvrand=8247957435547338807&hvtargid=kwd-321839338522&hydadcr=1026_1014997235&keywords=panel+solar+amazon&qid=1698128013&sr=8-2&ufe=app_do%3Aamzn1.fos.628a2120-cf12-4882-b7cf-30e681beb181" class="btn btn-primary btnFluido">Comprar</a>
+                  </div>
+                </div>
+              </div>
+   
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="card " >
+
+                  <picture class="card-img-top contenedorCompraPaneles">
+                    <source srcset="build/img/panel3.webp" type="image/webp">
+                    <source srcset="build/img/panel3.jpg" type="image/jpeg">
+                    <img src="build/img/panel3.jpg" alt="Imagen panel solar a la venta">
+                  </picture>
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Amazon <i class="bi bi-amazon"></i></h5>
+                    <p class="card-text">MEGSUN - Paneles solares monocristalinos de 200 W, 12 V, 2 unidades, 100 W, 22,8 % de alta eficiencia, cargador de alimentación PV para caravana, barco, batería, hogar, techo, caravana y otras aplicaciones fuera de la red (negro)</p>
+                    <a href="https://www.amazon.com.mx/MEGSUN-monocristalinos-eficiencia-alimentaci%C3%B3n-aplicaciones/dp/B0BFDR4LML?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A19CX32BHGVXJ5" class="btn btn-primary btnFluido">Comprar</a>
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+          
+      </section>
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

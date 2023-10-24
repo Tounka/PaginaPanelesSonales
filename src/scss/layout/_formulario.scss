@@ -1,0 +1,27 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+.contenedorFormulario{
+    padding: 4rem 6rem;
+
+    .contLbl{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .lbl{
+        padding: .5rem;
+        text-align: center;
+        font-size: 1.2rem;
+        color: v.$azul;
+        font-weight: bold;
+        @include m.tablet{
+            float: right;
+            text-align: right;
+        }
+        
+        cursor: pointer;
+    }
+
+}
+
+
