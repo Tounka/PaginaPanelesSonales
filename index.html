@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="build/css/app.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- barraNavegacion -->
@@ -41,7 +45,10 @@
                 <a class="nav-link active" aria-current="page" href="#">Algoritmo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Comprar</a>
+                <a class="nav-link active" aria-current="page" href="#masInformacion">Mas Información</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#comprarPaneles">Comprar</a>
               </li>
             </ul>
    
@@ -50,6 +57,8 @@
      
         </div>
       </nav>
+
+
       <!-- formulario -->
       <section>
         <div class="container-sm contenedorFormulario">
@@ -73,12 +82,12 @@
               </select>
 
               
-              <div class="contLbl col-sm-3 ">
+              <div class="contLbl col-12 col-sm-3 ">
                 <label class=" lbl" for="totalLuz">
                   Cuál fue tu gasto total de luz todo el año pasado (KWH)?
                 </label>
               </div>
-              <input class=" col-sm-9" type="number" id="totalLuz">
+              <input class=" col-12 col-sm-9" type="number" id="totalLuz">
 
               <div class="contLbl col-sm-3">
                 <label class="  lbl" for="totalLuz">
@@ -105,9 +114,108 @@
       
       </section>
 
+      <!-- masInformacion -->
+
+    <section class="container-fluid seccionMasInformacion" id="masInformacion">
+      <div class="row">
+        <div class="col-md-5 contenedorImgInformativa">  
+          <picture >
+            <source srcset="build/img/imgPortadaSeccionContacto.webp" type="image/webp">
+            <source srcset="build/img/imgPortadaSeccionContacto.jpg" type="image/jpeg">
+            <img src="build/img/imgPortadaSeccionContacto.jpg" alt="Imagen panel solar a la venta" class="img-fluid ">
+          </picture>
+
+          <div class="textosImgInformativa">
+            <h2 >SolarHigh</h2>
+            <p>Eleva tu energía, ilumina el futuro</p>
+          </div>
+        </div>
+
+        <div class="col-md-7 contenedorTarjetasInformativas ">  
+          <div class="row">
+
+            <div class="contenedorFC col-sm-6 bgCol1">
+              <div class="tarjetaInformativa ">
+                <div class="tarjetaInformativa-front ">
+                  Instalación
+                </div>
+                <div class="tarjetaInformativa-back ">
+                  <i class="bi bi-house-check"></i>
+                  Instalamos paneles solares en tiempo récord. No te arrepentirás de nuestros servicios.
+                </div>
+              </div>
+            </div>
+            
+            <div class="contenedorFC col-sm-6 bgCol2">
+              <div class="tarjetaInformativa ">
+                <div class="tarjetaInformativa-front ">
+                  Cotización
+                </div>
+                <div class="tarjetaInformativa-back ">
+                  <i class="bi bi-clipboard-check"></i>
+                  Realizamos las cotizaciones más justas del mercado, siempre buscando ofrecerte un excelente valor por tu inversión.
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="contenedorFC col-sm-6 bgCol3">
+              <div class="tarjetaInformativa ">
+                <div class="tarjetaInformativa-front ">
+                  Venta de equipos
+                </div>
+                <div class="tarjetaInformativa-back ">
+                  <i class="bi bi-cart4"></i>
+                  Somos distribuidores oficiales de los equipos "SolarTeb", lo que significa que contarás con garantía y una gama completa de servicios postventa.
+                </div>
+              </div>
+            </div>
+     
+            <div class="contenedorFC col-sm-6 bgCol4">
+              <div class="tarjetaInformativa ">
+                <div class="tarjetaInformativa-front ">
+                  Energía Limpia
+                </div>
+                <div class="tarjetaInformativa-back ">
+                  <i class="bi bi-battery-charging"></i>
+                  No solo reducirás tus costos de energía al usar paneles solares, sino que también contribuirás a hacer del mundo un lugar más sostenible.
+                </div>
+              </div>
+            </div>
+        
+            <div class="contenedorFC col-sm-6 bgCol5">
+              <div class="tarjetaInformativa ">
+                <div class="tarjetaInformativa-front ">
+                  Contrato CFE
+                </div>
+                <div class="tarjetaInformativa-back ">
+                  <i class="bi bi-file-earmark-medical"></i>
+                  
+                  Te apoyamos con toda la documentación necesaria y te ayudamos a optimizar los trámites con la CFE (Comisión Federal de Electricidad).
+                </div>
+              </div>
+            </div>
+     
+            <div class="contenedorFC col-sm-6 bgCol6">
+              <div class="tarjetaInformativa ">
+                <div class="tarjetaInformativa-front ">
+                  Ahorra
+                </div>
+                <div class="tarjetaInformativa-back ">
+                  <i class="bi bi-cash-coin"></i>
+                  Obtén recibos de luz cada vez más económicos y deja de pagar de más.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+    </section>
+
       <!-- link compra -->
 
-      <section class="comprarPaneles">
+      <section class="comprarPaneles" id="comprarPaneles">
      
         <div class="container-sm">
           <h2 class="text-center">
