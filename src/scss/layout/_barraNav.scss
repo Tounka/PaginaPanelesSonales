@@ -2,22 +2,31 @@
 @use '../base/variables' as v;
 .navbar {
     background-color: v.$naranja;
-    font-weight: bold;
-    color: v.$azul;
+ 
 }
+
+.active{    
+    font-weight: bold !important;
+    color: v.$blanco !important;
+}
+
 
 .contenedorBarraNavegacion{
     
-    
+    display: flex;
+    justify-content: center !important;
 
     .navbar-collapse{
+        
         display: flex;
         flex-direction: column;
         justify-content: center ;
         align-items: center;
 
         text-align: center;
+        margin-top: 1rem;
         @include m.tablet{
+            margin-top: 0rem;
            flex-direction: row;
            justify-content: space-between ;
         }
