@@ -2,6 +2,10 @@
 @use '../base/variables' as v;
 .contenedorFormulario{
     padding: 4rem 6rem;
+
+    .tituloFormulario{
+        color: v.$azul;
+    }
     form{
         padding: 0 2rem;
         @include m.tablet{
