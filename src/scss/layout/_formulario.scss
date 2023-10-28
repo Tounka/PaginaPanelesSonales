@@ -4,7 +4,9 @@
     padding: 4rem 6rem;
 
     .tituloFormulario{
-        color: v.$azul;
+    
+            background-color: v.$naranja;
+        
     }
     form{
         padding: 0 2rem;
@@ -48,4 +50,15 @@
 }
 
 
-
+.contenedorBtnCalcular{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#btnCalcular{
+    max-width: 30rem;
+    padding: 1rem;
+}
+.tituloAzul{
+    background-color: v.$azul;
+}
